@@ -1,7 +1,10 @@
 /* @refresh reload */
 import { render } from 'solid-js/web';
 
-import App from './App';
+import {Navigate, Route, Router, Routes} from "@solidjs/router";
+import HomePages from "./pages/home/home.pages";
+import PlayPages from "./pages/play/play.pages";
+import HelpPages from "./pages/help/help.pages";
 
 const root = document.getElementById('root');
 
@@ -11,4 +14,13 @@ if (import.meta.env.DEV && !(root instanceof HTMLElement)) {
   );
 }
 
-render(() => <App />, root!);
+render(() => (
+  <Router>
+    <Routes>
+      <Route path="/" component={HomePages} />
+      <Route path="/play" component={PlayPages} />
+      <Route path="/help" component={HelpPages} />
+      <Route path="*" element={<Navigate href={"/"} />} />
+    </Routes>
+  </Router>
+), root!);
