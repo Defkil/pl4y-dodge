@@ -1,7 +1,7 @@
-import { Component } from 'solid-js';
-import {setDocumentTitle} from "../../services/domManipulation.service";
+import { type Component } from 'solid-js'
+import { setDocumentTitle } from '../../services/domManipulation.service'
 
-const HelpPages: Component = () => {
+export const HelpPages: Component = () => {
   setDocumentTitle('Help - Dodge.Pl4y.app')
   return (
     <>
@@ -9,8 +9,5 @@ const HelpPages: Component = () => {
         Help
       </div>
     </>
-  );
-};
-
-export default HelpPages;
-
+  )
+}

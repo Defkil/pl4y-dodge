@@ -1,3 +1,3 @@
-export function setDocumentTitle(title: string): void {
-  document.title = title;
+export function setDocumentTitle (title: string): void {
+  document.title = title
 }
