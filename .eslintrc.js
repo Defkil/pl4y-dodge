@@ -16,6 +16,7 @@ module.exports = {
   rules: {
     '@typescript-eslint/prefer-nullish-coalescing': 'off',
     '@typescript-eslint/strict-boolean-expressions': 'off',
+    '@typescript-eslint/triple-slash-reference': 'off',
   },
   ignorePatterns: [
     'dist/',
