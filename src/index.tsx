@@ -6,6 +6,8 @@ import { HomePages } from './pages/home/home.pages'
 import { PlayPages } from './pages/play/play.pages'
 import { HelpPages } from './pages/help/help.pages'
 
+import './index.scss'
+
 const root = document.getElementById('root')
 
 if (!(root instanceof HTMLElement)) {
