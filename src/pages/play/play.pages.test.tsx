@@ -1,6 +1,6 @@
 import { render } from '@solidjs/testing-library'
 import { describe } from 'vitest'
-import PlayPages from './play.pages'
+import { PlayPages } from './play.pages'
 
 describe('<PlayPages />', () => {
   it('should render with a title', () => {
