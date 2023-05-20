@@ -11,8 +11,15 @@ module.exports = {
   parserOptions: {
     ecmaVersion: 'latest',
     sourceType: 'module',
-    project: './tsconfig.json'
+    project: './tsconfig.json',
   },
   rules: {
-  }
+    '@typescript-eslint/prefer-nullish-coalescing': 'off',
+    '@typescript-eslint/strict-boolean-expressions': 'off',
+  },
+  ignorePatterns: [
+    'dist/',
+    'node_modules/',
+    '**/*.js',
+  ]
 }
