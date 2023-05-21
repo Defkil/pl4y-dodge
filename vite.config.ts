@@ -13,12 +13,13 @@ export default defineConfig({
     target: 'esnext'
   },
   test: {
-    environment: 'jsdom',
+    environment: 'happy-dom',
     globals: true,
     transformMode: { web: [/\.[jt]sx?$/] },
     setupFiles: ['node_modules/@testing-library/jest-dom/extend-expect.js'],
     deps: { registerNodeLoader: true },
-    threads: true,
-    isolate: false
+    threads: false,
+    isolate: false,
+    mockReset: true
   }
 })
