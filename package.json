@@ -29,6 +29,8 @@
   },
   "dependencies": {
     "@solidjs/router": "^0.8.2",
+    "happy-dom": "^9.19.2",
+    "roughjs": "^4.5.2",
     "solid-js": "^1.6.10"
   }
 }
