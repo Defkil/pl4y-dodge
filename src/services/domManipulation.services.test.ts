@@ -1,4 +1,4 @@
-import { createCanvas, setDocumentTitle } from './domManipulation.service'
+import { createCanvas, setDocumentTitle } from './domManipulation.services'
 
 test('setDocumentTitle sets the document title', () => {
   const title = 'Test Title'
