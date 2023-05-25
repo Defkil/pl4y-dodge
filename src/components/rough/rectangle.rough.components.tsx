@@ -1,8 +1,8 @@
-import { type Component, createSignal, type JSX, onMount } from 'solid-js'
+import { type Component, createEffect, createSignal, type JSX } from 'solid-js'
 import { type Options } from 'roughjs/bin/core'
 import { roughServicesRectangle } from '../../services/rough.services'
 
-export const RectangleRoughComponentsDefaultPadding = 20
+export const RectangleRoughComponentsDefaultPadding = 12
 
 export const RectangleRoughComponents: Component<{
   children: JSX.Element
@@ -13,7 +13,7 @@ export const RectangleRoughComponents: Component<{
   const [background, setBackground] = createSignal('')
   const [padding, setPadding] = createSignal(RectangleRoughComponentsDefaultPadding)
 
-  onMount(() => {
+  createEffect((): void => {
     if (props.padding) {
       setPadding(props.padding)
     }
