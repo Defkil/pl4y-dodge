@@ -15,7 +15,7 @@ const menu: MenuUiHomePagesProps = [
   },
   {
     href: 'https://pl4y.app',
-    label: 'Pl4y.app',
+    label: 'More on Pl4y.app',
     external: true
   }
 ]
