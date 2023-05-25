@@ -113,7 +113,6 @@ describe('roughServicesRectangle function', () => {
       fill: 'red'
     }
     const result = roughServicesRectangle(settings, roughOptions)
-    console.log(result)
     expect(result).toBe(mockedDataUrl)
   })
 })
