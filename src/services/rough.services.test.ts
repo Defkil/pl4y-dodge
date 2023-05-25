@@ -71,10 +71,10 @@ describe('roughServicesRectangle function', () => {
     }
     roughServicesRectangle(settings, {})
     expect(mocks.rectangle).toHaveBeenCalledWith(
-      settings.padding / 2,
-      settings.padding / 2,
-      settings.width - settings.padding * roughServicesRectanglePaddingMultiplier,
-      settings.height - settings.padding * roughServicesRectanglePaddingMultiplier,
+      settings.padding,
+      settings.padding,
+      settings.width - settings.padding * 2 * roughServicesRectanglePaddingMultiplier,
+      settings.height - settings.padding * 2 * roughServicesRectanglePaddingMultiplier,
       roughServicesRectangleOptionsDefault
     )
   })
@@ -91,10 +91,10 @@ describe('roughServicesRectangle function', () => {
     }
     roughServicesRectangle(settings, roughOptions)
     expect(mocks.rectangle).toHaveBeenCalledWith(
-      settings.padding / 2,
-      settings.padding / 2,
-      settings.width - settings.padding * roughServicesRectanglePaddingMultiplier,
-      settings.height - settings.padding * roughServicesRectanglePaddingMultiplier,
+      settings.padding,
+      settings.padding,
+      settings.width - settings.padding * 2 * roughServicesRectanglePaddingMultiplier,
+      settings.height - settings.padding * 2 * roughServicesRectanglePaddingMultiplier,
       {
         ...roughServicesRectangleOptionsDefault,
         ...roughOptions
