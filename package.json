@@ -26,6 +26,7 @@
     "sass": "^1.62.1",
     "typescript": "^5.0.4",
     "vite": "^4.3.8",
+    "vite-plugin-minify": "^1.5.2",
     "vite-plugin-solid": "^2.7.0",
     "vitest": "^0.31.1"
   },

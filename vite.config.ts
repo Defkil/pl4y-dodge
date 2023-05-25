@@ -3,14 +3,19 @@
 
 import { defineConfig } from 'vite'
 import solidPlugin from 'vite-plugin-solid'
+import { ViteMinifyPlugin } from 'vite-plugin-minify'
 
 export default defineConfig({
-  plugins: [solidPlugin()],
+  plugins: [
+    solidPlugin(),
+    ViteMinifyPlugin({})
+  ],
   server: {
     port: 3000
   },
   build: {
-    target: 'esnext'
+    target: 'esnext',
+    minify: 'terser'
   },
   test: {
     environment: 'happy-dom',
