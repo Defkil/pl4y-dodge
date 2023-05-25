@@ -1,3 +1,14 @@
-a {
+.menu {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.menu__link {
+  text-align: center;
+  text-decoration: none;
   color: black
+}
+
+.menu__link__element {
+  padding: 16px 0;
 }
